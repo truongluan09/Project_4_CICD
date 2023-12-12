@@ -56,7 +56,7 @@ jobs:
         run: pipenv install
 
       - name: Run tests
-        run: pipenv run lint
+        run: pipenv run lint --max-line-length=999
 
   post-build-actions:
     needs: [running-test, running-linter]

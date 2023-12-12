@@ -113,7 +113,7 @@ jobs:
       - name: Build Docker image
         env:
           ECR_REGISTRY: "253490030767.dkr.ecr.us-east-1.amazonaws.com"
-          ECR_REPOSITORY: "test"
+          ECR_REPOSITORY: "frontend"
           IMAGE_TAG: ${{ github.sha }}
         run: |
           echo "ECR_REGISTRY: $ECR_REGISTRY"

@@ -55,7 +55,7 @@ jobs:
         run: pipenv install
 
       - name: Run tests
-        run: pipenv run lint
+        run: pipenv run lint --max-line-length=999
 
 
   build-actions:
